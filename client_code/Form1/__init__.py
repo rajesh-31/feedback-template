@@ -53,6 +53,28 @@ class Form1(Form1Template):
     self.login_link.visible = True
     self.report_link.visible = False
 
+  def submitt_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    # alert('You clicked submitt button')
+    name = self.name_box.text
+    email = self.email_box.text
+    feedback = self.feedback_box.text
+
+    anvil.server.call('add_feedback', name, email, feedback)
+    Notification("Feedback Submitted!").show()
+    self.clear_inputs()
+
+
+  def clear_inputs(self) :
+     self.name_box.text=""
+     self.email_box.text=""
+     self.feedback_box.text=""
+
+  def name_box_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    pass
+  
+
 
 
 

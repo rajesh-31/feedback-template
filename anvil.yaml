@@ -92,6 +92,23 @@ db_schema:
     - name: num_responses
       admin_ui: {width: 200}
       type: number
+  feedback:
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {order: 0, width: 200}
+      type: string
+    - name: email
+      admin_ui: {order: 1, width: 200}
+      type: string
+    - name: feedback
+      admin_ui: {order: 2, width: 200}
+      type: string
+    - name: created_on
+      admin_ui: {order: 3, width: 200}
+      type: datetime
+    title: feedback
 startup: {type: form, module: Form1}
 name: Webform Template
 startup_form: Form1

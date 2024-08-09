@@ -46,15 +46,16 @@ components:
     properties: {role: headline, text: 'Name :'}
     type: Label
     layout_properties: {grid_position: 'ILTMNQ,JHRUFE'}
-  - name: text_box_1
+  - name: name_box
     properties: {text: name_here}
     type: TextBox
     layout_properties: {grid_position: 'AELMXZ,HQWFVF'}
+    event_bindings: {pressed_enter: name_box_pressed_enter}
   - name: headline_2
     properties: {role: headline, text: 'Email : '}
     type: Label
     layout_properties: {grid_position: 'THZFFI,EPHZFQ'}
-  - name: text_box_2
+  - name: email_box
     properties: {text: Email_here}
     type: TextBox
     layout_properties: {grid_position: 'EKUSVL,IINSHS'}
@@ -62,11 +63,12 @@ components:
     properties: {role: headline, text: 'Feedback : '}
     type: Label
     layout_properties: {grid_position: 'UPUHIY,OSMPGC'}
-  - name: text_area_1
+  - name: feedback_box
     properties: {text: Feedback_here}
     type: TextArea
     layout_properties: {grid_position: 'PRBEFO,ALZVUY'}
-  - name: primary_color_1
+  - name: submitt_button
     properties: {text: Submitt, role: primary-color}
     type: Button
     layout_properties: {grid_position: 'HOGMUO,JEYWSN'}
+    event_bindings: {click: submitt_button_click}
