@@ -37,4 +37,36 @@ components:
   properties: {role: null, col_widths: '{}', spacing_above: none, background: '', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: none, visible: true, border: '', tooltip: ''}
   name: content_panel
   layout_properties: {slot: default}
-  components: []
+  components:
+  - name: headline_4
+    properties: {role: headline, text: Feedback Form}
+    type: Label
+    layout_properties: {grid_position: 'QHCYJV,SRTUVI'}
+  - name: headline_1
+    properties: {role: headline, text: 'Name :'}
+    type: Label
+    layout_properties: {grid_position: 'ILTMNQ,JHRUFE'}
+  - name: text_box_1
+    properties: {text: name_here}
+    type: TextBox
+    layout_properties: {grid_position: 'AELMXZ,HQWFVF'}
+  - name: headline_2
+    properties: {role: headline, text: 'Email : '}
+    type: Label
+    layout_properties: {grid_position: 'THZFFI,EPHZFQ'}
+  - name: text_box_2
+    properties: {text: Email_here}
+    type: TextBox
+    layout_properties: {grid_position: 'EKUSVL,IINSHS'}
+  - name: headline_3
+    properties: {role: headline, text: 'Feedback : '}
+    type: Label
+    layout_properties: {grid_position: 'UPUHIY,OSMPGC'}
+  - name: text_area_1
+    properties: {text: Feedback_here}
+    type: TextArea
+    layout_properties: {grid_position: 'PRBEFO,ALZVUY'}
+  - name: primary_color_1
+    properties: {text: Submitt, role: primary-color}
+    type: Button
+    layout_properties: {grid_position: 'HOGMUO,JEYWSN'}
