@@ -1,5 +1,5 @@
 allow_embedding: false
-package_name: Webform_Template
+package_name: feedback_form
 db_schema:
   users:
     title: Users
@@ -110,7 +110,7 @@ db_schema:
       type: datetime
     title: feedback
 startup: {type: form, module: Form1}
-name: Webform Template
+name: feedback form
 startup_form: Form1
 native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">'}
 correct_dependency_ids: {OHWC42ZUNUZNJNLA: OHWC42ZUNUZNJNLA}
@@ -119,7 +119,7 @@ runtime_options: {version: 2, client_version: '3', server_version: python3-sandb
 dependencies:
 - version: {dev: false}
   dep_id: OHWC42ZUNUZNJNLA
-metadata: {logo_img: '', title: ''}
+metadata: {logo_img: '', title: feedback app}
 services:
 - source: /runtime/services/tables.yml
   client_config: {}

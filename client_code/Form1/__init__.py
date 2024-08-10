@@ -63,8 +63,7 @@ class Form1(Form1Template):
     anvil.server.call('add_feedback', name, email, feedback)
     Notification("Feedback Submitted!").show()
     self.clear_inputs()
-
-
+    
   def clear_inputs(self) :
      self.name_box.text=""
      self.email_box.text=""
